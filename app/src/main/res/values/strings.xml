@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AutoWaiter</string>
+    <string name="title_activity_travelling">Travelling</string>
+    <string name="title_activity_traveller">Traveller</string>
+</resources>

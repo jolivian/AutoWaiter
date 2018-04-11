@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:text="   Order For Table: " />
+    <TextView
+        android:id="@+id/tvTableNumber"
+        android:layout_toRightOf="@id/tvTitle"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/tvGoodMeal"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:layout_below="@id/tvTitle"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:text="Good Meal: " />
+    <TextView
+        android:id="@+id/tvGoodMealQuantity"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:layout_below="@id/tvTitle"
+        android:layout_toRightOf="@id/tvGoodMeal"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/bSubGoodMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_toRightOf="@id/tvGoodMealQuantity"
+        android:text="-"/>
+
+    <Button
+        android:id="@+id/bAddGoodMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_toRightOf="@id/bSubGoodMeal"
+        android:text="+"/>
+
+    <TextView
+        android:id="@+id/tvGoodChunks"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:layout_below="@id/tvGoodMeal"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:text="Good Chunks: " />
+    <TextView
+        android:id="@+id/tvGoodChunksQuantity"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:layout_below="@id/tvGoodMeal"
+        android:layout_toRightOf="@id/tvGoodChunks"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/bSubGoodChunks"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/tvGoodMeal"
+        android:layout_toRightOf="@id/tvGoodChunksQuantity"
+        android:text="-"/>
+
+    <Button
+        android:id="@+id/bAddGoodChunks"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/tvGoodMeal"
+        android:layout_toRightOf="@id/bSubGoodChunks"
+        android:text="+"/>
+
+    <TextView
+        android:id="@+id/tvGoodChickwich"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:layout_below="@id/tvGoodChunks"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:text="Good Chickwich: " />
+    <TextView
+        android:id="@+id/tvGoodChickwichQuantity"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:layout_below="@id/tvGoodChunks"
+        android:layout_toRightOf="@id/tvGoodChickwich"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/bSubGoodChickwich"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/tvGoodChunks"
+        android:layout_toRightOf="@id/tvGoodChickwichQuantity"
+        android:text="-"/>
+
+    <Button
+        android:id="@+id/bAddGoodChickwich"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/tvGoodChunks"
+        android:layout_toRightOf="@id/bSubGoodChickwich"
+        android:text="+"/>
+
+    <TextView
+        android:id="@+id/tvSpecialOrder"
+        android:layout_below="@id/tvGoodChickwich"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:layout_height="42dp"
+        android:text="Special Order: "/>
+
+    <EditText
+        android:id="@+id/etSpecialOrder"
+        android:layout_below="@id/tvSpecialOrder"
+        android:layout_width="match_parent"
+        android:layout_height="225dp" />
+
+    <Button
+        android:id="@+id/bOrder"
+        android:layout_below="@id/etSpecialOrder"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:text="Order"/>
+    
+</RelativeLayout>
